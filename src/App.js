@@ -9,7 +9,7 @@ const stepOneSchema = yup.object().shape({
   name: yup.string().required('Name is required'),
   dobOrAge: yup.string().required('Date of Birth or Age is required'),
   sex: yup.string().required('Sex is required'),
-  mobile: yup.string().required('Mobile is required'),
+  mobile: yup.string().required('Mobile number is required'),
   govtId: yup.string().required('Government ID is required'),
   zip: yup.string().required('Zip is required'),
   gridCheck: yup.boolean().oneOf([true], 'You must check this box to proceed'),
